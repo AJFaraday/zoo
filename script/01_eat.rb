@@ -5,3 +5,4 @@ bessie.eat('grass')
 
 shep = Dog.find_by_name('Shep')
 shep.eat(bessie)
+shep.eat('dog food')
