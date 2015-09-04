@@ -9,6 +9,14 @@ class Animal
     @name = name
   end
 
+  def eat(food)
+    if food.is_a?(Animal)
+      raise "Bad #{self.class}! You are not allowed to eat #{food.name}"
+    else
+      puts "#{name} is munching some #{food}"
+    end
+  end
+
   def Animal.all
     @@animals.select{|x| x.is_a?(self)}
   end
